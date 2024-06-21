@@ -1,0 +1,13 @@
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^logout$ modules/logout.php
+RewriteRule ^users$ pages/users.php
+RewriteRule ^panel$ pages/panel.php
+RewriteRule ^new_user$ pages/new_user.php
+RewriteRule ^user/([\d-]+)$ pages/user.php?id=$1
+RewriteRule ^pay([\d-]+)$ pages/user_pay/index.php?id=$1

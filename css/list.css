@@ -1,0 +1,7 @@
+*{ margin: 0; padding: 0;}
+
+.centered {
+    padding-top:5em;
+    width:95rem;
+    margin-left: 20em;
+}
